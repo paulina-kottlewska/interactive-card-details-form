@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+  <main>
+    <section class="left-column">
+        <div class="wrapper">
+          <div class="card-back-container">
+            <img src="images/bg-card-back.png" alt="credit card back" class="card-back">
+            <div class="cvc-code-container">
+              <p class="cvc-code">000</p>
+            </div>
+          </div>
+          <div class="card-front-container">
+            <img src="images/bg-card-front.png" alt="credit card front" class="card-front">
+            <div class="card-details-container">
+              <img src="images/card-logo.svg" alt="" class="card-logo">
+              <p class="cardholder-name">Jane Appleseed</p>
+              <p class="card-number">0000 0000 0000 0000</p>
+              <p class="expiration-date"><span class="month">00</span>/<span class="year">00</span></p>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section class="right-column">
+      <form action="#">
+        <label for="cardholder">Cardholder Name</label>
+        <input type="text" name="cardholder" id="cardholder" placeholder="e.g. Jane Appleseed" maxlength="24">
+        <span class="error-msg error-input1 hidden">Can't be blank</span>
+        <label for="card-number">Card Number</label>
+        <input type="text" name="card-number" id="card-number" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+        <span class="error-msg error-input2 hidden">Can't be blank</span>
+        <div class="exp-date-cvc-container">
+          <div class="exp-date-wrapper">
+            <label for="exp-date" class="label-date">Exp. Date (MM/YY)</label>
+            <div class="month-year-wrapper">
+              <input type="text" name="month" id="exp-date" placeholder="MM" class="month" maxlength="2">
+              <input type="text" name="year" id="year" placeholder="YY" class="year" maxlength="2">
+            </div>
+          </div>
+          <span class="error-msg error-input3 hidden">Can't be blank</span>
+          <div class="cvc-wrapper">
+            <label for="cvc" class="label-cvc">CVC</label>
+            <input type="text" name="cvc" id="cvc" placeholder="e.g. 123" class="cvc-number" maxlength="3">
+          </div>
+          <span class="error-msg error-input4 hidden">Can't be blank</span>
+        </div>
+        <input type="submit" value="Confirm" class="submit-btn">
+      </form>
+      <div class="submitted-msg hidden">
+        <img src="images/icon-complete.svg" alt="" class="icon-complete">
+        <h1 class="thank-you">Thank you!</h1>
+        <p class="confirmation-message">
+          We've added your card details
+        </p>
+        <button class="continue"> Continue</button>
+      </div>
+    </section>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Paulina</a>.
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>

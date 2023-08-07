@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Link
 
-- Live Site URL: (https://interactive-card-details-form-pk.netlify.app/)
+- Live Site URL: (https://frontend-mentor-challenge-pk.netlify.app/)
 
 ## My process
 
